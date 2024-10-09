@@ -1,0 +1,197 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "table1"
+						"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+							add( new java.util.Vector {
+								add( "" )
+								add( null )
+								add( null )
+								add( null )
+								add( "" )
+							} )
+							add( new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( "" )
+							} )
+						}, new java.util.Vector {
+							add( "Nome" )
+							add( "Preço" )
+							add( "Código" )
+							add( "Garantia" )
+							add( "Qtd Palete" )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						"font": new java.awt.Font( "Inter", 1, 14 )
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 80
+					"width": 640
+					"height": 220
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 2
+				"y": 215
+				"height": 135
+				"width": 648
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel2"
+				"font": &Font0 new java.awt.Font( "Inter", 0, 14 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lBlNome"
+					"text": "Nome:"
+					"font": new java.awt.Font( "Inter", 1, 14 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 150
+					"y": 35
+					"width": 55
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "tXtNome"
+					"font": new java.awt.Font( "Inter", 0, 14 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 275
+					"y": 35
+					"width": 160
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lBlPreco"
+					"text": "Preço:"
+					"font": new java.awt.Font( "Inter", 1, 14 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 50
+					"height": 17
+					"x": 150
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "tXtPreco"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 25
+					"x": 275
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lBlQuantPalete"
+					"text": "Qtd.Palete:"
+					"font": &Font1 new java.awt.Font( "Inter", 1, 14 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 86
+					"height": 17
+					"x": 150
+					"y": 160
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lBlCodigo"
+					"text": "Código:"
+					"font": new java.awt.Font( "Inter", 1, 14 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 17
+					"x": 150
+					"y": 95
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "tXtCodigo"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 25
+					"x": 275
+					"y": 95
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lBlGarantia"
+					"text": "Garantia:"
+					"font": #Font1
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 71
+					"height": 17
+					"x": 150
+					"y": 125
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "tXtPalete"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 25
+					"x": 275
+					"y": 155
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "tXtGarantia"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 160
+					"height": 25
+					"x": 275
+					"y": 125
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnCadastrar"
+					"text": "Cadastrar"
+					"font": &Font2 new java.awt.Font( "Inter", 1, 14 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnCadastrar", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 500
+					"y": 35
+					"height": 40
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnCancelar"
+					"text": "Cancelar"
+					"font": #Font2
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnCancelar", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 110
+					"height": 40
+					"x": 500
+					"y": 100
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 645
+				"height": 195
+				"x": 5
+				"y": 10
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 755, 485 )
+		} )
+	}
+}
